@@ -1,0 +1,33 @@
+
+/* .hole .mole{
+ width: 70%;
+position: absolute; 
+ left: 50%;
+transform: translate(-50%); }  */
+
+/* puts the gameboard and scoreboard into a central position */
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+  color: black; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+/* adjusts the size of the scoreboard font*/
+#score{
+font-size: 4em;
+/* creates the board size, style, and color. As well creating a grid display with rows and columns */
+}
+#board{
+height: 600px;
+width: 600px;
+border: 1px solid black;
+background-color: #008385;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 80px;
+}
+
